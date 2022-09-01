@@ -6,6 +6,12 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
   const router = useRouter()
   return (
     <Head>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8108156981776188"
+        crossorigin="anonymous"
+      ></script>
+
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
