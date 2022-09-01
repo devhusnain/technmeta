@@ -9,7 +9,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8108156981776188"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
 
       <title>{title}</title>
