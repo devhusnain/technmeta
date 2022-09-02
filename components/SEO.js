@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
-import Ads from '@/components/Ads'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl }) => {
   const router = useRouter()
   return (
     <Head>
-      <Ads />
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
@@ -30,6 +28,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
       />
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8108156981776188"
+        crossOrigin="anonymous"
+      ></script>
     </Head>
   )
 }
